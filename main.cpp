@@ -66,6 +66,7 @@ int main(){
 				string color;
 				cin>>color;
 				if(opcion2 == 1){
+
 					contador1++;
 					precioC += precio1 + precioll;
 				}else{
@@ -74,7 +75,33 @@ int main(){
 				}
 
 		}else if(opcion == 2){
-			
+			cout<<"Que bicicleta desea agregar"<<endl;
+			cout<<"1. Carrera"<<endl<<"2. Montana"<<endl;
+			int opcion3;
+			cin>>opcion3;
+
+			cout<<"Ingrese el precio"<<endl;
+			double preciop;
+			cin>>preciop;
+			cout<<"Ingrese el peso"<<endl;
+			double pesop;
+			cin>>pesop;
+			cout<<"Ingrese el material de la llanta"<<endl;
+			string materialp;
+			cin>>materialp;
+			cout<<"Ingrese el precio de la llanta"<<endl;
+			double precio2;
+			cin>>precio2;
+			cout<<"Ingrese el color de la llanta"<<endl;
+			string color2;
+			cin>>color2;
+			if(opcion3 == 1){
+				contador1++;
+				precioC += preciop + precio2*(tamanoCar*mCarrera);
+			}else{
+				contador2++;
+				precioM += preciop + precio2*(tamanoMon*mMontana);
+			}
 		}else if(opcion == 3){
 			
 		}else{
