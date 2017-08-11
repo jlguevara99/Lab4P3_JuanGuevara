@@ -13,7 +13,7 @@ class BicicletaCarrera : public Bicicleta{
 		double getPrecio();
 		double getPeso();
 		Llanta* getLlanta();
-		
+				
 };
 
 
