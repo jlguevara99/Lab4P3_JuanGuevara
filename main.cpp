@@ -37,7 +37,7 @@ int main(){
 	do {
 		cout<<"1. Agregar individuales"<<endl;
 		cout<<"2. Agregar repetidas"<<endl;
-		cout<<"3. calcular el valor total"<<endl<<"4. Salir"<<endl;
+		cout<<"3. Calcular el valor total"<<endl<<"4. Salir"<<endl;
 		int opcion;
 		cin>>opcion;
 		if(opcion == 1){
@@ -68,10 +68,10 @@ int main(){
 				if(opcion2 == 1){
 
 					contador1++;
-					precioC += precio1 + precioll;
+					precioC += (precio1 + precioll);
 				}else{
 					contador2++;
-					precioM += precio1 + precioll;
+					precioM += (precio1 + precioll);
 				}
 
 		}else if(opcion == 2){
@@ -97,19 +97,19 @@ int main(){
 			cin>>color2;
 			if(opcion3 == 1){
 				contador1++;
-				precioC += preciop + precio2*(tamanoCar*mCarrera);
+				precioC += (preciop + precio2*(tamanoCar*mCarrera));
 			}else{
 				contador2++;
-				precioM += preciop + precio2*(tamanoMon*mMontana);
+				precioM += (preciop + precio2*(tamanoMon*mMontana));
 			}
 		}else if(opcion == 3){
 			cout<<"De cual camion desea ver el precio? "<<endl<<"1. Carreras"<<endl<<"2. Montaña"<<endl;
 			int valor;
 			cin>>valor;
 			if(valor == 1){
-				cout<<"El precio del camion de carreras es: "<<precioC;
+				cout<<"El precio del camion de carreras es: "<<precioC<<endl;
 			}else if(valor == 2){
-				cout<<"El precio del camion de carreras es: "<<precioM;
+				cout<<"El precio del camion de carreras es: "<<precioM<<endl;;
 			}else{
 				cout<<"La opcion no es valida"<<endl;
 			}
