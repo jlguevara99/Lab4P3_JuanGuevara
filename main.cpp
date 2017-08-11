@@ -107,15 +107,19 @@ int main(){
 				precioM += (preciop + precio2*(tamanoMon*mMontana));
 			}
 		}else if(opcion == 3){
-			cout<<"De cual camion desea ver el precio? "<<endl<<"1. Carreras"<<endl<<"2. Montaña"<<endl;
-			int valor;
-			cin>>valor;
-			if(valor == 1){
-				cout<<"El precio del camion de carreras es: "<<precioC<<endl;
-			}else if(valor == 2){
-				cout<<"El precio del camion de carreras es: "<<precioM<<endl;;
+			if(precioC != 0 || precioM != 0){
+				cout<<"De cual camion desea ver el precio? "<<endl<<"1. Carreras"<<endl<<"2. Montaña"<<endl;
+				int valor;
+				cin>>valor;
+				if(valor == 1){
+					cout<<"El precio del camion de carreras es: "<<precioC<<endl;
+				}else if(valor == 2){
+					cout<<"El precio del camion de carreras es: "<<precioM<<endl;;
+				}else{
+					cout<<"La opcion no es valida"<<endl;
+				}
 			}else{
-				cout<<"La opcion no es valida"<<endl;
+				cout<<"Uno de los dos camiones está vacio"<<endl;
 			}
 		}else{
 			salir = false;
