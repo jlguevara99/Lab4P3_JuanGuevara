@@ -103,7 +103,16 @@ int main(){
 				precioM += preciop + precio2*(tamanoMon*mMontana);
 			}
 		}else if(opcion == 3){
-			
+			cout<<"De cual camion desea ver el precio? "<<endl<<"1. Carreras"<<endl<<"2. Montaña"<<endl;
+			int valor;
+			cin>>valor;
+			if(valor == 1){
+				cout<<"El precio del camion de carreras es: "<<precioC;
+			}else if(valor == 2){
+				cout<<"El precio del camion de carreras es: "<<precioM;
+			}else{
+				cout<<"La opcion no es valida"<<endl;
+			}
 		}else{
 			salir = false;
 		}
