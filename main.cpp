@@ -1,4 +1,6 @@
 #include "Bicicleta.h"
+#include "BicicletaMontana.h"
+#include "BicicletaCarrera.h"
 #include "Llanta.h"
 #include<iostream>
 #include <string>

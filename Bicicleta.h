@@ -5,18 +5,16 @@
 using namespace std;
 
 class Bicicleta{
-	private:
+	public:
 		double precio;
 		double peso;
 		Llanta* llantas;
 
-	public:
+				
 		Bicicleta();
 		~Bicicleta();
-		Bicicleta(double,double,Llanta*);
-		double getPrecio();
-		double getPeso();
-		Llanta* getLlanta();
+		
+		
 };
 
 
