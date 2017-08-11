@@ -65,6 +65,8 @@ int main(){
 				cout<<"Ingrese el color de la llanta"<<endl;
 				string color;
 				cin>>color;
+
+				cout<<"Bicicleta agregada exitosamente"<<endl;
 				if(opcion2 == 1){
 
 					contador1++;
@@ -95,6 +97,8 @@ int main(){
 			cout<<"Ingrese el color de la llanta"<<endl;
 			string color2;
 			cin>>color2;
+
+			cout<<"Bicicletas agregadas exitosamente"<<endl;
 			if(opcion3 == 1){
 				contador1++;
 				precioC += (preciop + precio2*(tamanoCar*mCarrera));
